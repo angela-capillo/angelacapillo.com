@@ -11,7 +11,8 @@
     --color-text: var(--color-black);
     --color-link: var(--color-gray-medium);
     --color-link-hover: var(--color-gray-dark);
-    --color-body: var(--color-gray-light);
+    --color-background: var(--color-gray-light);
+    --color-background-hivis: #e6ff66;
 
 
     /* Type */
@@ -21,20 +22,19 @@
     --font-heading: var(--font-secondary);
     --font-text: var(--font-primary);
 
-    --font-xl: 2.5rem;
-    --font-l: 1.5rem;
-    --font-m: 1.25rem;
-    --font-s: 1rem;
-    --font-xs: 0.875rem;
+    --text-xl: 2.5rem;
+    --text-l: 1.5rem;
+    --text-m: 1.25rem;
+    --text-s: 1rem;
+    --text-xs: 0.875rem;
 
     --font-bold: 700;
     --font-normal: 400;
 
-    --line-height-m: 1.5;
-    --line-height-s: 1.25;
+    --text-line-height-m: 1.5;
+    --text-line-height-s: 1.25;
 
-
-    /* Space */
+    /* Spacing */
     --space-3xl: 5rem;
     --space-2xl: 4rem;
     --space-xl: 2.5rem;
