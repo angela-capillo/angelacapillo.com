@@ -26,7 +26,8 @@
         <main id="main">
             <div class="info text-wrapper">
                 <p>
-                    Designing a BI platform to help municipality officers integrating, transforming and visualising government data for data-driven decision making.
+                    Designing a BI platform to help municipality officers integrating, transforming and visualising
+                    government data for data-driven decision making.
                 </p>
                 <p class="info-content">2023-2024 / Cloud-based web application, B2B, SaaS</p>
 
@@ -40,14 +41,10 @@
             <section class="text-wrapper">
                 <h2>Background</h2>
                 <p>
-                    Polyteia began as a service providing German municipalities with a comprehensive data analysis
-                    solution. By aggregating, transforming, and analyzing data from various sources—such as Excel files,
-                    administrative software, and databases—the company delivered insights through a user-friendly
-                    dashboard called Polyteia Leto, empowering municipalities to make data-driven decisions.
-                </p>
-                <p>
-                    Since its launch in 2018, Polyteia has secured significant funding from investors like Finparx, Bool
-                    Capital, DvH Ventures, and DV Capital, all aimed at taking its product to the next level.
+                    Polyteia began as a data service providing German municipalities with a comprehensive data analysis
+                    solution. By aggregating, transforming, and analyzing data from various sources — such as Excel
+                    files, administrative software, and databases — the company delivered insights through a
+                    user-friendly dashboard, empowering municipalities to make data-driven decisions.
                 </p>
                 <p>
                     This case study highlights key moments in the journey of evolving Polyteia’s flagship product from a
@@ -60,6 +57,233 @@
             <figure>
                 <img src="/assets/images/polyteia/01_home.png" alt="A screenshot of the platform homepage">
                 <figcaption>The data platform homepage</figcaption>
+            </figure>
+
+            <section class="text-wrapper">
+                <h2>The use case</h2>
+                <p>
+                    Our decision to develop a Business Intelligence (BI) tool was driven by valuable feedback from
+                    internal analysts, customer success teams, sales representatives, and our clients.
+                </p>
+                <p>
+                    <strong> Analysts: </strong> They highlighted a pressing need for a unified workflow. The current
+                    setup involved juggling multiple tools, which made tasks like code review and debugging increasingly
+                    complex. As more dashboards were created, their workflow became sluggish and less efficient,
+                    resulting in frustration and a need for a more streamlined solution.
+                </p>
+                <p>
+                    <strong> Municipality Officers: </strong> These users expressed a desire for greater autonomy in
+                    managing their data. Specifically, they wanted to streamline data collection and have the ability to
+                    create, manage, and distribute their own surveys within their municipal networks. Previously, this
+                    process was managed entirely by our analysts, leading to delays and inefficiencies.
+                </p>
+                <p>
+                    <strong> Expert Users in Municipalities: </strong> These users sought the freedom to generate their
+                    own reports without relying on us for every step of the process, from data collection to
+                    transformation and analysis. They wanted more control over their data, enabling them to make faster,
+                    data-driven decisions independently.
+                </p>
+            </section>
+
+            <figure>
+                <img src="/assets/images/polyteia/02_old_dashboard.png"
+                    alt="A screenshot of the old dashboard before the redesign">
+                <figcaption>The old dashboard</figcaption>
+            </figure>
+
+            <section class="text-wrapper">
+                <h2>Discovery & research</h2>
+                <p>
+                    From the outset, it was evident that our data platform needed to encompass the entire data
+                    workflow—covering everything from data ingestion, transformation, and pipeline orchestration to
+                    analysis and report creation—within a single platform.
+                </p>
+                <p>
+                    To gain a deep understanding of the processes, technologies, and tools involved, I began by
+                    interviewing data engineers and analysts. These interviews provided valuable insights into the
+                    existing workflows and the challenges they faced, such as using multiple tools for different tasks.
+                    I learned about the specific technologies we employed and the intricacies of the tasks that needed
+                    to be streamlined.
+                </p>
+                <p>
+                    In addition to these interviews, I conducted extensive desk research to familiarize myself with the
+                    fundamentals of data engineering. I also took the initiative to learn essential tools like SQL and
+                    dbt, which allowed me to better grasp the technical aspects of the workflows I was aiming to
+                    optimize.
+                </p>
+                <p>
+                    Using the insights gathered from the interviews, I created and tested user flows to ensure that our
+                    proposed solution met the needs of our users. To further refine the platform’s structure, I
+                    conducted card sorting and tree testing workshops through Optimal Workshop.
+                </p>
+            </section>
+
+            <figure>
+                <img src="/assets/images/polyteia/04_requirements_user_flows.png"
+                    alt="A Miro board showing sticky notes with requirements and user flows">
+                <figcaption>Requirements and user flows from the workshop with internal analysts</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/images/polyteia/05_research_matrix.png"
+                    alt="A correlation matrix chart showing relationships between pages">
+                <figcaption>Relationships between pages following the card sorting</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/images/polyteia/06_tree_testing.png" alt="A screenshot from the tree testing survey">
+                <figcaption>Tree testing survey</figcaption>
+            </figure>
+
+            <section class="text-wrapper">
+                <h2>Design, prototype, test</h2>
+                <p>
+                    We embraced a collaborative approach throughout the design process. I conducted co-design sessions,
+                    bringing together diverse perspectives from data engineers, analysts, and other stakeholders.
+                </p>
+                <p>
+                    Before moving to high-fidelity prototypes in Figma, we spent significant time sketching and creating
+                    paper prototypes. This hands-on approach allowed us to quickly iterate on ideas, identify potential
+                    issues, and gather feedback early in the process. By exploring different design solutions on paper
+                    first, we were able to focus on the core functionality and user experience without getting bogged
+                    down in the finer details too soon.
+                </p>
+                <p>
+                    Once we felt confident in the direction we were heading, we transitioned to Figma for creating
+                    high-fidelity prototypes. This shift allowed us to bring our designs to life, incorporating the
+                    feedback and insights gathered from our earlier sketches and co-design sessions.
+                </p>
+            </section>
+
+            <figure>
+                <img src="/assets/images/polyteia/07_design_workshop.png" alt="A pen-and-paper sketch of an interface">
+                <figcaption>A sketch of the Explorer feature made by an internal analyst</figcaption>
+            </figure>
+
+            <section class="text-wrapper">
+                <p>
+                    Especially when working on complex applications for expert users, I believe that a designer’s role
+                    is not always to be in the driver’s seat. Technical users possess deep knowledge of processes and
+                    tools, and more experienced individuals often have insights into the history behind these
+                    systems—how they have evolved, why changes were made, and whether those changes were improvements.
+                </p>
+                <p>
+                    This knowledge is invaluable, and I believe the designer’s role is to harness and amplify it,
+                    enabling these insights to shape the design. While the designer may still own the process, leading
+                    it is not always necessary; instead, facilitating and highlighting the expertise of others can often
+                    lead to a more effective and user-centered outcome.
+                </p>
+            </section>
+
+            <figure>
+                <img src="/assets/images/polyteia/08_explorer_sketches.png"
+                    alt="Sketches of an interface showing a SQL editor">
+                <figcaption>Commented sketches of the Explorer feature</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/images/polyteia/09_widget_editor_sketches.png"
+                    alt="Sketches of an interface showing a chart editor">
+                <figcaption>Sketches of the Widget Editor with requirements for chart properties, filtering and other
+                    customisation options</figcaption>
+            </figure>
+
+            <section class="text-wrapper">
+                <h2>UX highlights</h2>
+                <p>
+                    My UX approach for the data platform was guided by a few core principles that ensured I created an
+                    intuitive, accessible, and effective platform for all users.
+                </p>
+                <p>
+                    <strong> Making Complex Things Simple: </strong> One of our main goals was to simplify the
+                    complexity inherent in data workflows. We focused on streamlining the user experience, distilling
+                    complicated processes into straightforward, manageable tasks.
+                </p>
+                <p>
+                    <strong> Don’t Reinvent the Wheel: </strong> We recognized the value in leveraging existing
+                    solutions and familiar tools. Rather than creating new, unfamiliar interfaces, we drew from
+                    established patterns which our users already knew and trusted.
+                </p>
+                <p>
+                    <strong> Prioritise Accessibility: </strong> Accessibility was a top priority throughout the design
+                    process. I ensured that the tool was usable by a diverse range of users, regardless of their
+                    technical expertise or physical abilities. This included considering color contrast, keyboard
+                    navigation, and screen reader compatibility.
+                </p>
+                <p>
+                    <strong> Scale the Experience According to User Literacy: </strong> Understanding that our users had
+                    varying levels of data literacy, I designed the platform to scale according to their needs. For
+                    municipal officers with less technical experience, we offered a simple, no-code interface that
+                    allowed them to perform tasks without diving into the complexities of data manipulation. At the same
+                    time, we provided advanced features, like the ability to write SQL and JSON, for expert users who
+                    required more control and flexibility in their work.
+                </p>
+            </section>
+
+            <figure>
+                <img src="/assets/images/polyteia/18_explorer.png"
+                    alt="A screen of a data explorer interface with a main panel with a SQL editor and other panels for databases and transformation projects">
+                <figcaption>The data Explorer panel</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/images/polyteia/15_data_lineage.png"
+                    alt="A screen of a data explorer interface showing the data lineage for a mart table">
+                <figcaption>Data lineage</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/images/polyteia/16_version_history.png"
+                    alt="A screen of a version history interface showing two panels with highlighted bits of a SQL query and user edits">
+                <figcaption>Version history</figcaption>
+            </figure>
+
+            <section class="text-wrapper">
+                <h2>UI highlights</h2>
+                <p>
+                    To facilitate ease of use, I incorporated well-known dashboard patterns throughout the interface.
+                    These familiar layouts and components helped users quickly understand and navigate the tool,
+                    minimizing the learning curve and allowing them to focus on their tasks.
+                </p>
+                <p>
+                    Besides, I intentionally reused patterns across different sections of the platform, ensuring that
+                    users would encounter familiar layouts and interactions regardless of the task they were performing.
+                    For example, our multi-panel layout was designed to be versatile, serving as the foundation for
+                    various tools within the platform, including the data explorer, report editor, form editor, and
+                    widget editor. This consistency not only created a unified visual experience but also helped users
+                    seamlessly transition between different tasks without needing to relearn the interface.
+                </p>
+                <p>
+                    Finally, to align the UI with our rebranded style guide, I updated our existing design system,
+                    refreshing components and visual elements to reflect the new brand identity. In addition, I
+                    incorporated components from the Flowbite library, enhancing our design system while cutting down on
+                    design and development time. This allowed us to deliver a polished, cohesive interface more
+                    efficiently, while also improving the overall quality and functionality of the UI.
+                </p>
+            </section>
+
+            <figure>
+                <img src="/assets/images/polyteia/03_report.png"
+                    alt="A screen of a multi-page dashboard">
+                <figcaption>The Report Editor</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/images/polyteia/17_survey_form.png"
+                    alt="A screen of a form editor with panels to choose and edit different kinds of question options">
+                <figcaption>The Form Editor</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/images/polyteia/11-14_widget_editor.png"
+                    alt="Multiple screens of a chart editor featuring different editing and filtering options">
+                <figcaption>The Widget Editor</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/images/polyteia/19_data_panel.png"
+                    alt="High-fidelity designs showing several interaction states of a panel for choosing chart data">
+                <figcaption>Interaction design of the data panel in the Widget Editor</figcaption>
             </figure>
 
             <div class="link-wrapper">
