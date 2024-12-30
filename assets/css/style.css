@@ -231,6 +231,11 @@ figcaption {
   flex-shrink: 0;
 }
 
+.card-logo {
+  border: none;
+  padding: var(--space-l);
+}
+
 @media (max-width: 900px) {
   .card {
     flex-direction: column;
